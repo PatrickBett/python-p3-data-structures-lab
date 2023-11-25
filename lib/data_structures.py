@@ -54,11 +54,14 @@ def get_average_heat_level(spicy_foods):
         num.append(heat_level)
     for n in num:
         total_heat_level += n
-    print(total_heat_level/len(spicy_foods))
+    return(total_heat_level/len(spicy_foods))
 
     
 
 
-get_average_heat_level(spicy_foods)
+#get_average_heat_level(spicy_foods)
 def create_spicy_food(spicy_foods, spicy_food):
-    pass
+    spicy_foods.append(spicy_food)
+    return (spicy_foods) 
+
+#create_spicy_food(spicy_foods, 90)
